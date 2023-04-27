@@ -7,13 +7,17 @@ import PropsTrainer from './components/PropsTrainer.jsx';
 import ShowTrainers from './components/ShowTrainers.jsx';
 import Counter from './components/Counter.jsx';
 import Converter from './components/Converter.jsx';
+import UserDetails from './components/UserDetails.jsx';
+import Car from './components/Car.jsx';
+import ProductTable from './components/ProductTable.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Trainer />
       <h1><AnotherComponent /></h1>
       <MyComponent />
@@ -21,7 +25,10 @@ function App() {
       <PropsTrainer name='James' age='37' />
       <ShowTrainers />
       <Counter />
-      <Converter />
+      <Converter /> */}
+      {/* <UserDetails /> */}
+      {/* <Car /> */}
+      <ProductTable />
     </>
   );
 }
