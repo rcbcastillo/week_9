@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import ModifiedCounter from './components/ModifiedCounter.jsx';
+import trainers from '../src/assets/trainers.json'
+import Trainer from './components/Trainer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ModifiedCounter />
+      {trainers.map(({ name, age, id }) => <Trainer key={id} name={name} age={age} />)}
     </div>
   );
 }
